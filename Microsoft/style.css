@@ -1,0 +1,360 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar1{
+    display: flex !important;
+    justify-content: space-around !important;
+    margin-top: 11px;
+    display: block;
+}
+.navcontentleft ul, .navcontentright ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.navcontentleft li a{
+    text-decoration: none;
+    color: #000;
+}
+.navcontentleft li a:hover, .navcontentright li:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    cursor: pointer;
+}
+#navmob, .gamepassmob{
+    display: none;
+}
+.assistance{
+    height: 60px;
+    width: 100%;
+    background-color: #0067b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.assistance a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+.assistance a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.move {
+    margin-left: 5px;
+    transition: margin-left 0.3s ease;
+    display: inline-block; 
+    color: white;
+    font-size: larger;
+}
+
+.assistance:hover .move {
+    margin-left: 10px; 
+}
+.carousel-caption h1 , .carousel-caption p{
+    color: #000;
+}
+.learnbtn{
+    height: 50px;
+    width: 150px;
+    background-color: #0067b8;
+    border: #0067b8;
+    color: white;
+}
+#caption1{
+    margin-left: 750px;
+    text-align: justify;
+    bottom: 14rem;
+}
+#caption2{
+    text-align: justify;
+    bottom: 14rem;
+}
+#caption2 p{
+    width: 40%;
+}
+.carousel-control-prev, .carousel-control-next{
+    display: none !important;
+}
+.carousel-indicators .active{
+    background-color: #0067b8 !important;
+}
+.carousel-indicators button{
+    background-color: white !important;
+}
+.contents{
+    display: flex;
+    justify-content: center;
+}
+.content1 ul, .content2 ul, .content3 ul, .content4 ul{
+    list-style-type: none;
+    text-align: -webkit-center;
+}
+.content1{
+    display: flex;
+    gap: 60px;
+}
+#card1{
+    padding: 85px;
+    width: 100%;
+}
+
+.move1 {
+    margin-left: 5px;
+    transition: margin-left 0.3s ease;
+    display: inline-block; 
+    font-size: larger;
+}
+.card-body a{
+    text-decoration: none;
+}
+
+.card-body a:hover .move1{
+    margin-left: 15px;
+}
+#c1{
+    border: white !important;
+}
+
+.imggame{
+    width: 100%;
+    padding: 85px;
+}
+.text-game{
+    position: absolute;
+    margin-top: -435px;
+    color: white;
+    margin-left: 111px;
+}
+.text-game p{
+    width: 58%;
+}
+.followsection{
+    display: flex;
+    justify-content: space-between;
+}
+.follow ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+.follow{
+    padding: 0 58px;
+}
+.backtotop{
+    padding: 0 100px;
+}
+.backbtn{
+    height: 40px;
+    width: 150px;
+    background-color: gainsboro;
+    border: none;
+}
+.follow ul li a{
+    text-decoration: none;
+    color: #000;
+}
+#icon{
+    font-size: x-large;
+}
+.followtxt{
+    font-size: large;
+}
+.aboutsection{
+    height: auto;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.about{
+    display: flex;
+    padding: 80px;
+    gap: 50px;
+}
+.whatsnew ul, .microsoftstore ul, .education ul, .business ul, .developer ul, .company ul{
+    list-style-type: none;
+    line-height: 30px;
+}
+.whatsnew ul li a, .microsoftstore ul li a, .education ul li a, .business ul li a, .developer ul li a, .company ul li a{
+    text-decoration:none ;
+    color: gray;
+    font-size: small;
+}
+.whatsnew ul li a:hover, .microsoftstore ul li a:hover, .education ul li a:hover, .business ul li a:hover, .developer ul li a:hover, .company ul li a:hover{
+    text-decoration: underline;
+}
+.lastcontent{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 0 80px;
+}
+.contact ul, .last ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+.contact ul li a, .last ul li a{
+    color: gray;
+    text-decoration: none;
+    font-size: small;
+}
+.last ul li{
+    font-size: small;
+}
+
+
+@media(max-width:768px){
+    .navbar1, .navcontentright, .navcontentleft{
+        display: none;
+    }
+    #navmob{
+        display: block;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-toggler{
+        border: white !important;
+    }
+    .assistance{
+        margin-top: 40px;
+        height: 90px;
+    }
+    .assistance h6{
+        font-size: medium;
+        padding: 25px;
+    }
+    .nav-link{
+        color: #000 !important;
+    }
+  .carousel-item img{
+    height: 220px;
+  }
+  #caption1{
+    text-align: justify; 
+    margin-left: 180px;
+    bottom: 3rem; 
+    width: 36%;
+}
+#caption1 h1, #caption1 p{
+    color: black;
+}
+#caption1 h1 , #caption2 h1{
+    font-size: medium;
+}
+#caption1 p, #caption2 p{
+    font-size: xx-small;
+    width: 100%;
+}
+.learnbtn{
+    width: 100px;
+    height: 40px;
+}
+#caption2{
+    text-align: justify; 
+    margin-left: -30px;
+    bottom: 3rem; 
+    width: 36%;
+}
+.images ul, .content1, .gamepassmob{
+    display: block;
+}
+#card1{
+    padding: 25px;
+    width: 100%;
+    margin-left: 0;
+}
+.passimg{
+    display: none;
+}
+#c2{
+    padding: 25px;
+    border: white;
+    width: 100%;
+}
+.followsection{
+    display: block;
+}
+.follow{
+    padding: 0 20px;
+}
+.backtotop{
+   padding: 0 40px;
+   float: right;
+
+}
+.about{
+    display: block;
+    padding: 20px;
+}
+.lastcontent{
+    display: block;
+    padding: 0 25px;
+}
+.contact ul{
+    display: block;
+    font-size: small;
+    padding: 25px;
+    line-height: 30px;
+}
+  
+}
+
+
+
+
+
+
+
+
+
+@media(min-width:768px) and (max-width:1024px){
+    .navbar1, .navcontentright, .navcontentleft{
+        display: block;
+        font-size: smaller;
+    }
+    #navmob, .gamepassmob{
+        display: none;
+    }
+    #caption1{
+        margin-left: 450px;
+        bottom: 3rem;
+
+    }
+    #caption2{
+        margin-left: -30;
+        bottom: 3rem;
+    }
+    .content1{
+        gap: 40px;
+    }
+    #card1{
+        padding: 25px;
+    }
+    .text-game{
+        margin-top: -300px;
+    }
+    .text-game h1{
+        font-size: x-large;
+    }
+    .text-game p{
+        width: 40%;
+    }
+    .about{
+        gap: 30px;
+        padding: 20px;
+        font-size: smaller;
+    }
+    .lastcontent{
+        padding: 25px;
+    }
+}
