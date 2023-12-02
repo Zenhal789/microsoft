@@ -253,7 +253,7 @@ body{
 }
 #caption1 p, #caption2 p{
     font-size: xx-small;
-    width: 100%;
+    width: 110%;
 }
 .learnbtn{
     width: 100px;
@@ -357,4 +357,37 @@ body{
     .lastcontent{
         padding: 25px;
     }
+}
+
+
+@media(min-width:392px) and (max-width:394px){
+    .assistance h6{
+        padding: 18px;
+    }
+    .carousel-caption{
+        width: 37%;
+    }
+}
+@media(min-width:374px) and (max-width:376px){
+    .assistance h6{
+        padding: 9px;
+    }
+}
+
+@media(min-width:319px) and (max-width:321px){
+    .assistance h6{
+        padding: 9px;
+        font-size: smaller;
+    }
+    #caption1{
+        margin-left: 147px;
+    }
+    #caption2{
+        width: 45%;
+    }
+}
+@media(min-width:389px) and (max-width:391px){
+.assistance h6{
+    padding: 17px;
+}
 }
